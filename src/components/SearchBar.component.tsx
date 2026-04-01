@@ -6,7 +6,7 @@ export default function SearchBar() {
         placeholder="Search here..."
         className="flex-1 bg-transparent outline-none text-[#0300B8] placeholder-[#0300B8] font-['Londrina_Solid'] text-sm"
       />
-      <span className="text-[#0300B8] font-['Londrina_Solid'] text-sm opacity-60">ctrl + f</span>
+      <span className=" border-2 border-[#0300b8 ] px-2 py-1 bg-[#0200b8] text-white font-['Londrina_Solid'] text-sm ">ctrl + f</span>
     </div>
   );
 }

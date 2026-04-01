@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../UI/Button.ui";
 
 const filters = ["All", "Files", "Blogs", "Articles"] as const;
 type Filter = (typeof filters)[number];
@@ -16,24 +17,15 @@ export default function FilterButtons({ onFilterChange }: Props) {
   };
 
   return (
-    <div className="flex justify-between">
+    <div className="flex gap-3">
       {filters.map((filter) => (
-        <button
+        <Button
+          disable={false}
           key={filter}
+          label={filter}
+          active={active === filter}
           onClick={() => handleClick(filter)}
-          style={{ boxShadow: '4px 4px 0px #0300B8' }}
-          className={`
-            border-2 border-[#0300B8] px-6 py-2 font-['Londrina_Solid'] text-sm font-semibold tracking-wider
-            transition-colors cursor-pointer
-            ${active === filter
-              ? "bg-[#0300B8] text-white border-white"
-              : "bg-transparent text-[#0300B8] hover:bg-[#0300B8] hover:text-white"
-            }
-            -ml-[2px] first:ml-0
-          `}
-        >
-          {filter}
-        </button>
+        />
       ))}
     </div>
   );

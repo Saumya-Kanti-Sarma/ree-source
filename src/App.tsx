@@ -14,7 +14,7 @@ export default function App() {
       <div className="max-w-4xl mx-auto w-full flex flex-col flex-1 p-4 gap-0">
         {/* Navbar */}
         <Navbar />
-
+        <br />
         {/* Search */}
         <div className="-mt-[2px]">
           <SearchBar />
@@ -25,6 +25,10 @@ export default function App() {
           <FilterButtons onFilterChange={setActiveFilter} />
         </div>
 
+        <br />
+
+        <hr />
+
         {/* Cards */}
         <div className="flex flex-col mt-4 gap-0">
           {mockData.map((item, i) => (
@@ -34,13 +38,15 @@ export default function App() {
           ))}
         </div>
 
-        {/* Spacer */}
-        <div className="flex-1" />
+        <br />
+        <hr />
 
-        {/* Footer */}
-        <div className="mt-4 -mb-0">
-          <Footer />
-        </div>
+
+
+      </div>
+      {/* Footer */}
+      <div className="mt-4">
+        <Footer />
       </div>
     </div>
   );

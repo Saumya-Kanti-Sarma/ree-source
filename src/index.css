@@ -9,3 +9,10 @@ body {
   color: #0300B8;
   font-family: 'Londrina Solid', monospace;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Jersey 25';
+}
