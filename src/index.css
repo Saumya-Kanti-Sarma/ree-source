@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+* {
+  border-radius: 0 !important;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #0300B8;
+  font-family: 'Londrina Solid', monospace;
+}
